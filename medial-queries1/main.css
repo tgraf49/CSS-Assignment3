@@ -1,3 +1,47 @@
 body {
   background: blanchedalmond;
 }
+
+* {
+  border: 1px solid teal;
+}
+
+.a , .c{
+  width: 100vw;
+  height: 15vh;
+}
+
+.b {
+  width: 100vw;
+  height: 55vh;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction:  column;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .a {
+    height: 25vh;
+  }
+  .b {
+    width: 68vw;
+  }
+
+  .c {
+    width: 15vw;
+  }
+
+  .b , .c {
+    height: 72vh;
+  }
+}
